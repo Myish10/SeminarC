@@ -2,6 +2,8 @@
 // // Если N = 5 -> 0 1 1 2 3
 // // Если N = 3 -> 0 1 1
 // // Если N = 7 -> 0 1 1 2 3 5 8
+using System;
+
 int InputNum(string message)
 {
     Console.Write(message);
