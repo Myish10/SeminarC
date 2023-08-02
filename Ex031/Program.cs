@@ -47,9 +47,11 @@ void FillNewArray(string[] array, string[] newArray)
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length > 3) continue;
-        else newArray[j] = array[i];
-        j++;
+        if (array[i].Length <= 3)
+        {
+            newArray[j] = array[i];
+            j++;
+        }
     }
 }
 
