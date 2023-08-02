@@ -4,7 +4,7 @@
 */
 
 Console.Write("Введите число от 1 до 7: ");
-string number = Console.ReadLine();
+string number = Console.ReadLine()!;
 if (number == "1")
 {
     Console.WriteLine("Понедельник");
