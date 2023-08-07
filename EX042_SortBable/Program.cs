@@ -8,11 +8,11 @@ void InputArray(int[] array)
     }
 }
 
-int[] SortBable(int[] array, int n)
+int[] SortBable(int[] array)
 {
-    for (int k = 0; k < n - 1; k++)
+    for (int k = 0; k < array.Length - 1; k++)
     {
-        for (int i = 0; i < n - 1; i++)
+        for (int i = 0; i < array.Length - 1; i++)
         {
             if (array[i] > array[i + 1])
             {
@@ -30,4 +30,4 @@ int n = int.Parse(Console.ReadLine()!);
 int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
-Console.WriteLine($"Конечный массив: [{string.Join(", ", SortBable(array, n))}]");
+Console.WriteLine($"Конечный массив: [{string.Join(", ", SortBable(array))}]");
