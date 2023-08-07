@@ -10,13 +10,16 @@ void InputArray(int[] array)
 
 int[] SortBable(int[] array, int n)
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int k = 0; k < n - 1; k++)
     {
-        if (array[i] > array[i + 1])
+        for (int i = 0; i < n - 1; i++)
         {
-            int temp = array[i];
-            array[i] = array[i + 1];
-            array[i + 1] = temp;
+            if (array[i] > array[i + 1])
+            {
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
         }
     }
     return array;
