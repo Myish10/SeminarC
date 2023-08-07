@@ -25,9 +25,20 @@ int[] SortBable(int[] array)
     return array;
 }
 
+bool Check(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        if (array[i] > array[i + 1]) return false;
+    }
+    return true;
+}
+
 Console.Write("Введите количество элементов массива: ");
 int n = int.Parse(Console.ReadLine()!);
 int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"Исходный массив: [{string.Join(", ", array)}]");
+Console.WriteLine(Check(array));
 Console.WriteLine($"Конечный массив: [{string.Join(", ", SortBable(array))}]");
+Console.WriteLine(Check(array));
