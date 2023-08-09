@@ -12,7 +12,7 @@ int[] SortBable(int[] array)
 {
     for (int k = 0; k < array.Length - 1; k++)
     {
-        for (int i = 0; i < array.Length - 1; i++)
+        for (int i = 0; i < array.Length - 1 - k; i++)
         {
             if (array[i] > array[i + 1])
             {
